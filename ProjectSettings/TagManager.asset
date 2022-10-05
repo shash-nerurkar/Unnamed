@@ -11,16 +11,16 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Enemy
+  - Player weapon
+  - Enemy weapon
+  - Player hitbox
+  - Enemy hitbox
+  - Knife
+  - Vegetable
+  - Empty hand
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: breakfast_table
+    uniqueID: 3095661661
+    locked: 0
+  - name: breakfast_table_items
+    uniqueID: 3301911631
+    locked: 0
+  - name: breakfast_vegetables
+    uniqueID: 837641619
+    locked: 0
+  - name: breakfast_arm
+    uniqueID: 1815185877
     locked: 0
