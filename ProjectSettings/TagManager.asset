@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bowl
+  - Cutting board
   layers:
   - Default
   - TransparentFX
@@ -20,10 +22,10 @@ TagManager:
   - Enemy hitbox
   - Knife
   - Vegetable
-  - Empty hand
-  - 
-  - 
-  - 
+  - Hand
+  - Arm
+  - Bowl
+  - Cutting board
   - 
   - 
   - 
@@ -52,4 +54,7 @@ TagManager:
     locked: 0
   - name: breakfast_arm
     uniqueID: 1815185877
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 612097293
     locked: 0
