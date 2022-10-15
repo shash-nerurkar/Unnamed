@@ -1,16 +1,28 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System.Threading.Tasks;
 
-public class TextPanel : MonoBehaviour
+public class TextDisplay : MonoBehaviour
 {
-    void Start()
-    {
-        
+    public TextMeshProUGUI textLabel;
+    string destinationText;
+
+    public async Task ShowTextAsync(string text) {
+        textLabel.text = "";
+        destinationText = text;
+        await ShowTextAsyncRoutine();
     }
 
-    void Update()
-    {
-        
+    public async Task ShowTextAsyncRoutine() {
+        int i = 0;
+        while(i < destinationText.Length) {
+            textLabel.text += destinationText[i++];
+            await Task.Delay(30);
+        }
+    }
+
+    public void ShowFullText(string text = null) {
+        textLabel.text = text ?? destinationText;
     }
 }

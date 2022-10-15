@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 25 / 25
+  m_text: 0 / 25
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7039230077059667411}
   - component: {fileID: 5068620827323514013}
-  - component: {fileID: 3594811312133956635}
+  - component: {fileID: 3143085582757211203}
   m_Layer: 5
   m_Name: Health bar
   m_TagString: Untagged
@@ -300,11 +300,11 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3594811312133956635
+--- !u!114 &3143085582757211203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 583337246514255438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f4790fcd9ae30344abce2212e0a0ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 70aa9361246cc464cb74a6a304922826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 5068620827323514013}
@@ -411,8 +411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleTextLabel: {fileID: 3752534358423199687}
-  healthBar: {fileID: 3594811312133956635}
-  energyBar: {fileID: 3396198508453688465}
+  healthBar: {fileID: 3143085582757211203}
+  energyBar: {fileID: 4436335148778181729}
 --- !u!1 &1408999574662769714
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4264726988225651594}
   - component: {fileID: 3245502271837686868}
-  - component: {fileID: 3396198508453688465}
+  - component: {fileID: 4436335148778181729}
   m_Layer: 5
   m_Name: Energy bar
   m_TagString: Untagged
@@ -578,11 +578,11 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3396198508453688465
+--- !u!114 &4436335148778181729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4113797947541939383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f4790fcd9ae30344abce2212e0a0ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 70aa9361246cc464cb74a6a304922826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 3245502271837686868}
@@ -814,7 +814,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 25 / 25
+  m_text: 0 / 25
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1,21 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Threading.Tasks;
 
 public class CharacterPanel : MonoBehaviour
 {
     public TextMeshProUGUI titleTextLabel;
-    public ValueBar healthBar;
-    public ValueBar energyBar;
+    public ValueBarAsync healthBar;
+    public ValueBarAsync energyBar;
 
-    public void InitPanel(
+    public async Task InitPanel(
         string title,
         int maxHealth,
         int maxEnergy
     ) {
         titleTextLabel.text = title;
-        healthBar.InitBar(maxHealth);
-        energyBar.InitBar(maxEnergy);
+        _ = healthBar.InitBar(maxHealth);
+        await energyBar.InitBar(maxEnergy);
     }
 }
