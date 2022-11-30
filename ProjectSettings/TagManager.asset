@@ -13,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
+  - Wall
   - Player
   - Enemy
   - Player weapon
@@ -55,6 +55,9 @@ TagManager:
   - name: breakfast_arm
     uniqueID: 1815185877
     locked: 0
-  - name: New Layer 5
+  - name: Isometric Layer 0
     uniqueID: 612097293
+    locked: 0
+  - name: Isometric Layer 1
+    uniqueID: 3708857301
     locked: 0

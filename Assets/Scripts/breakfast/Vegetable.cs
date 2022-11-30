@@ -67,7 +67,7 @@ public class Vegetable : MonoBehaviour
     }
 
     void StartFleeCooldownTimer(float additionalTime = 0) {
-        if(fleeCooldownTimer.isRunning) return;
+        if(fleeCooldownTimer.IsRunning) return;
         
         float fleeCooldownTime = additionalTime + Random.Range(5, 25);
         fleeCooldownTimer.StartTimer(maxTime: fleeCooldownTime, onTimerFinish: OnFleeCooldownFinish);

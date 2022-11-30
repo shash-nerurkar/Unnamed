@@ -3,35 +3,47 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining;
-    public bool isRunning = false;
+    public float TimeRemaining { get; set; }
+    public bool IsRunning { get; set; } = false;
 
     Action onTimerFinish;
 
+    Action<int> onTimerFinishWithIntParam;
+
+    int intParam = -1;
+
     // STARTS THE TIMER
     public void StartTimer(float maxTime, Action onTimerFinish) {
-        timeRemaining = maxTime;
+        intParam = -1;
+        TimeRemaining = maxTime;
         this.onTimerFinish = onTimerFinish;
-        isRunning = true;
+        IsRunning = true;
+    }
+    public void StartTimerWithIntParameter(float maxTime, Action<int> onTimerFinishWithIntParam, int intParam) {
+        this.intParam = intParam;
+        TimeRemaining = maxTime;
+        this.onTimerFinishWithIntParam = onTimerFinishWithIntParam;
+        IsRunning = true;
     }
 
     public void PauseTimer() {
-        isRunning = false;
+        IsRunning = false;
     }
 
     void Update()
     {
-        if (isRunning)
+        if (IsRunning)
         {
-            if (timeRemaining > 0)
+            if (TimeRemaining > 0)
             {
-                timeRemaining -= Time.deltaTime;
+                TimeRemaining -= Time.deltaTime;
             }
             else
             {
-                timeRemaining = 0;
-                isRunning = false;
-                onTimerFinish();
+                TimeRemaining = 0;
+                IsRunning = false;
+                if(intParam != -1) onTimerFinishWithIntParam(intParam);
+                else onTimerFinish();
             }
         }
     }

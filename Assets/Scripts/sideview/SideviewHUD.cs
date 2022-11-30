@@ -6,7 +6,7 @@ public class SideviewHUD : MonoBehaviour
 {
     public GameObject pauseOverlay;
 
-    public void TooglePause() {
+    public void TogglePause() {
         if(Time.timeScale == 0) {
             Time.timeScale = 1;
             pauseOverlay.SetActive(false);

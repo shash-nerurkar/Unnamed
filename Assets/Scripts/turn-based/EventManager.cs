@@ -8,8 +8,8 @@ public class EventManager : MonoBehaviour
     public InputAction selectAttackAction;
 
     public BottomTextPanel bottomTextPanel;
-    public Player player;
-    public Enemy enemy;
+    public TurnBasedPlayer player;
+    public TurnBasedEnemy enemy;
 
     int selectedAttack = 0;
     GameStates state;

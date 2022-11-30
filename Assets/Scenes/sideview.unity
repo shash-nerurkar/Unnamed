@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &619542650 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4900737854410087021, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
-  m_PrefabInstance: {fileID: 4900737854881210903}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79c59c13f69793b478edec60953c5255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &853137631
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +983,7 @@ PrefabInstance:
     - target: {fileID: 606505997479414421, guid: 3248535f6a2562c489a1223a75951ef2, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 619542650}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3248535f6a2562c489a1223a75951ef2, type: 3}
 --- !u!1001 &4900737854881210903
@@ -1092,9 +1081,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4900737855457102657, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1798728707}
+    - target: {fileID: 4900737855457102657, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4900737855457102660, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4900737854410087021, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
+--- !u!1 &4900737854881210904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4900737854410087008, guid: 38448971fd8671a42afc7ea4391dcbd4, type: 3}
+  m_PrefabInstance: {fileID: 4900737854881210903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4900737854881210905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900737854881210904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4790fcd9ae30344abce2212e0a0ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 0}
+  textDisplay: {fileID: 0}
