@@ -37,14 +37,14 @@ public class SideviewPlayer : MonoBehaviour
         invincibilityTimer = this.gameObject.AddComponent<Timer>();
         attackModeTimer = this.gameObject.AddComponent<Timer>();
         healthBar.InitBar(health);
-        healthBar.Changevalue(health);
+        healthBar.ChangeValue(health);
     }
 
     public void Damage(float damage, Vector3 hitterPosition, float hitKnockback) {
         if(animator.GetBool("IsHit") || animator.GetBool("IsDying") || animator.GetBool("IsInvincible")) return;
 
         health = health < damage ? 0 : health - damage;
-        healthBar.Changevalue(health);
+        healthBar.ChangeValue(health);
         
         Vector2 hitDirection = new(
             Mathf.Cos(Vector2.Angle(hitterPosition, transform.position) * Mathf.Deg2Rad) * Mathf.Sign((transform.position - hitterPosition).x),

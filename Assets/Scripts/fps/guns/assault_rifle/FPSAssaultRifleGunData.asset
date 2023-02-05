@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c498ad562047949a3e6abe287e9cb2, type: 3}
+  m_Name: FPSAssaultRifleGunData
+  m_EditorClassIdentifier: 
+  name: Assault Rifle
+  image: {fileID: 21300000, guid: 9ed33b1a91c66044aa0509768eb8ef89, type: 3}
+  maxDistance: 200
+  bulletData: {fileID: 11400000, guid: 89a67254196216e43bdfc55aab2678dd, type: 2}
+  gunShootType: 2
+  magSize: 80
+  currentAmmo: 80
+  recoil: 0.07
+  recoilDuration: 0.05
+  recoverDuration: 0.1
+  canFire: 1
+  burstFireCount: 0
+  currentBurstFireCount: 0

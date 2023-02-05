@@ -157,7 +157,7 @@ public class IsometricPlayer : MonoBehaviour
 
     public void Damage(int damage, Vector3 hitterPosition, float hitKnockback) {
         health = health < damage ? 0 : health - damage;
-        bottomPanel.healthBar.Changevalue(health);
+        bottomPanel.healthBar.ChangeValue(health);
         
         playerMovementInput.enabled = false;
         foreach(InputAction abilityAction in abilityActions) {

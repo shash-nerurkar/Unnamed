@@ -149,7 +149,7 @@ public class IsometricEnemy : MonoBehaviour
 
     public void Damage(int damage, Vector3 hitterPosition, float hitKnockback) {
         health = health < damage ? 0 : health - damage;
-        healthBar.Changevalue(health);
+        healthBar.ChangeValue(health);
         
         if(health == 0) {
             ChangeState(States.Dying);

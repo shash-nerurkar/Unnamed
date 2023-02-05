@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Bowl
   - Cutting board
+  - Input Manager
+  - FPS Weapon Container
+  - Player UI
+  - Player Camera
   layers:
   - Default
   - TransparentFX
@@ -27,7 +31,7 @@ TagManager:
   - Bowl
   - Cutting board
   - Player shield
-  - 
+  - Interactable
   - 
   - 
   - 

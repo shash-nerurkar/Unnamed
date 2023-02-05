@@ -11,10 +11,10 @@ public class ValueBarAsync : MonoBehaviour
     public async Task InitBar(float maxValue) {
         bar.maxValue = maxValue;
         textDisplay.text = "0 / " + maxValue;
-        await Changevalue(maxValue);
+        await ChangeValue(maxValue);
     }
 
-    public async Task Changevalue(float value) {
+    public async Task ChangeValue(float value) {
         float valuePerFrame;
         if(bar.value < value) {
             valuePerFrame = 11f - Mathf.Clamp((value - bar.value)/10, 0.5f, 10);

@@ -26,10 +26,10 @@ public class ValueBar : MonoBehaviour
         bar.maxValue = maxValue;
         if(textDisplay != null) textDisplay.text = maxValue + " / " + maxValue;
         if(setValue)  SetValue(maxValue);
-        else Changevalue(maxValue);
+        else ChangeValue(maxValue);
     }
 
-    public void Changevalue(float value) {
+    public void ChangeValue(float value) {
         if(animatedValueChange != null) StopCoroutine(animatedValueChange);
         animatedValueChange = StartCoroutine(AnimatedValueChange(value));
         OnComplete = false;
